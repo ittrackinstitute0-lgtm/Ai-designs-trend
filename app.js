@@ -125,25 +125,52 @@
     sortOrder: 'momentum-desc'
   };
 
-  // --- INITIALIZE STATE (Empty by default) ---
+  // --- INITIALIZE STATE (Synchronizes with data.js published by pipeline) ---
   function loadPersistedState() {
+    const rawData = window.RADAR_DATA || {};
+    const publishedTrends = rawData.INITIAL_TRENDS || [];
+    const publishedInspirations = rawData.INITIAL_INSPIRATIONS || [];
+    const publishedRecords = rawData.INITIAL_RECORDS || [];
+
     try {
       const stored = localStorage.getItem(STORAGE_KEY);
       if (stored) {
         const parsed = JSON.parse(stored);
         state = { ...state, ...parsed };
+
+        // Synchronize any newly published items from data.js
+        if (publishedTrends.length > 0) {
+          const existingIds = new Set(state.trends.map(t => t.id));
+          const newItems = publishedTrends.filter(t => !existingIds.has(t.id));
+          state.trends = [...newItems, ...state.trends];
+        }
+        if (publishedInspirations.length > 0) {
+          const existingIds = new Set(state.inspirations.map(i => i.id));
+          const newItems = publishedInspirations.filter(i => !existingIds.has(i.id));
+          state.inspirations = [...newItems, ...state.inspirations];
+        }
+        if (publishedRecords.length > 0) {
+          const existingIds = new Set(state.records.map(r => r.id));
+          const newItems = publishedRecords.filter(r => !existingIds.has(r.id));
+          state.records = [...newItems, ...state.records];
+        }
       } else {
-        resetStateToDefaults();
+        state.trends = [...publishedTrends];
+        state.inspirations = [...publishedInspirations];
+        state.records = [...publishedRecords];
       }
     } catch (e) {
-      resetStateToDefaults();
+      state.trends = [...publishedTrends];
+      state.inspirations = [...publishedInspirations];
+      state.records = [...publishedRecords];
     }
   }
 
   function resetStateToDefaults() {
-    state.trends = [];
-    state.inspirations = [];
-    state.records = [];
+    const rawData = window.RADAR_DATA || {};
+    state.trends = rawData.INITIAL_TRENDS ? [...rawData.INITIAL_TRENDS] : [];
+    state.inspirations = rawData.INITIAL_INSPIRATIONS ? [...rawData.INITIAL_INSPIRATIONS] : [];
+    state.records = rawData.INITIAL_RECORDS ? [...rawData.INITIAL_RECORDS] : [];
     state.lastUpdate = Date.now();
     state.lastTrendUpdate = Date.now();
     state.lastInspirationUpdate = Date.now();

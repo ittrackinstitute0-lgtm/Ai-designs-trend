@@ -1,89 +1,98 @@
 # 🛰️ AI Design Trend Radar
 
-An autonomous, professional graphic design intelligence platform that continuously tracks, discovers, and analyzes emerging visual design trends across **Logos**, **Posters**, **Typography**, **Color Palettes**, and **Social Media**.
+An autonomous, professional graphic design intelligence observatory powered by **Google Gemini AI** and **GitHub Actions**. Continuously tracks, verifies, and publishes emerging visual design trends across **Logos**, **Posters**, **Typography**, **Color Palettes**, and **Social Media**.
 
 ---
 
-## ⚡ Core Features & Automatic Update Schedule
+## ⚡ Autonomous GitHub Actions Pipeline
 
-The platform implements an automated cron telemetry engine that simulates real-world scheduled background cycles:
+The website is powered by an automated GitHub Actions pipeline located in [`.github/workflows/ai_trend_pipeline.yml`](.github/workflows/ai_trend_pipeline.yml):
 
-| Cycle | Cadence | Activity |
-|---|---|---|
-| **Design Trend Discovery** | **Every 6 Hours** | Automatically discovers, vectorizes, and analyzes emerging trend signals across all 5 design categories with momentum velocity scores and AI prompts. |
-| **Design Inspiration Drop** | **Every 12 Hours** | Curates community artifacts, multi-agent experiments, and tool-specific design explorations (Midjourney v6.1, Flux.1 Pro, Spline 3D, Recraft v3). |
-| **24h AI Design Trend Record** | **Every 24 Hours** | Synthesizes an executive intelligence dossier featuring macro aesthetic shifts, declining anti-trends, color harmony forecasts, and prompt formulas. |
-| **Telemetry Clock & History** | **Real-Time** | Prominently displays the exact **Last Update Date and Time** (`Nov 16, 2026, 15:28:23 UTC`), elapsed time, and countdowns to upcoming intervals. |
+- **Actions Dashboard**: [https://github.com/ittrackinstitute0-lgtm/Ai-designs-trend/actions](https://github.com/ittrackinstitute0-lgtm/Ai-designs-trend/actions)
+- **Automatic Execution Cadence**:
+  - **9:00 AM Pakistan Standard Time (PKT)** (`04:00 UTC`)
+  - **6:00 PM Pakistan Standard Time (PKT)** (`13:00 UTC`)
+  - **On-Demand Manual Trigger**: You can trigger a run anytime by navigating to the **Actions** tab on GitHub and clicking **"Run workflow"**.
+
+---
+
+## 🧠 AI Discovery & Verification Architecture
+
+The automation script [`.github/scripts/ai_pipeline.py`](.github/scripts/ai_pipeline.py) runs on Google Gemini (`gemini-3.5-flash-lite`) through a 4-stage pipeline:
+
+```
+┌─────────────────────────────────┐
+│  1. GEMINI AI VECTOR DISCOVERY  │
+│  Scans global design shifts     │
+└───────────────┬─────────────────┘
+                │
+                ▼
+┌─────────────────────────────────┐
+│  2. AUTOMATED VERIFICATION PASS │
+│  • Schema & type integrity      │
+│  • WCAG color contrast checks   │
+│  • Actionable prompt validation │
+│  • Design rules quality checks  │
+└───────────────┬─────────────────┘
+                │
+                ▼
+┌─────────────────────────────────┐
+│  3. ATOMIC DATA INGESTION       │
+│  Updates data.js & data.json    │
+└───────────────┬─────────────────┘
+                │
+                ▼
+┌─────────────────────────────────┐
+│  4. GIT COMMIT & DEPLOYMENT     │
+│  Pushes to main & GitHub Pages  │
+└─────────────────────────────────┘
+```
+
+### Verification Criteria Before Publishing
+Every candidate trend discovered by Gemini must pass **100% of these validation checks**:
+1. **Schema Completeness**: Enforces valid `category`, `title`, `subtitle`, `momentum` (0-100), `velocity`, `status`, `summary`, and `keyRules`.
+2. **Color Palette Accessibility**: Validates 3 to 5 hexadecimal color codes (`#RRGGBB`) and verifies WCAG contrast compliance (> 4.5:1) against the dark obsidian theme.
+3. **Actionable Prompt Blueprints**: Ensures Midjourney v6.1 / Flux.1 prompt syntax contains concrete lighting, geometry, and stylistic tokens.
+4. **Actionable Design Constraints**: Requires at least 2 distinct vector rules per trend.
+
+---
+
+## 🔐 How to Configure Your Gemini API Key on GitHub
+
+To securely manage your Gemini API key in GitHub:
+
+1. Go to your repository settings:  
+   👉 **`https://github.com/ittrackinstitute0-lgtm/Ai-designs-trend/settings/secrets/actions`**
+2. Click **"New repository secret"**.
+3. Set the **Name** to: `GEMINI_API_KEY`
+4. Set the **Value** to your Gemini API key (e.g. paste your key from Google AI Studio)
+5. Click **"Add secret"**.
 
 ---
 
 ## 🎨 Covered Graphic Design Categories
 
-1. **💠 Logos & Brand Identity Systems**  
-   - Spatial Refraction & Liquid Glassmorphism
-   - Cyber-Chisel & Hard-Surface Monograms
-   - Algorithmic Bio-Lattice & Voronoi Cellular Emblems
-
-2. **📐 Editorial Posters & Print**  
-   - Deconstructed Swiss Cyberpunk & Flight Telemetry Grids
-   - Hyper-Chroma Risograph Wave & Stochastic Halftone
-   - Solarpunk Bio-Constructivism & Terracotta Geometries
-
-3. **🔤 Typography & Variable Fonts**  
-   - Expanded Neo-Grotesque with variable width & tracking
-   - Liquified High-Fashion Serifs with exaggerated ink traps
-   - Cyber-Runic Monospace with technical code slashes
-
-4. **🎨 Color Palettes & Lighting Spaces**  
-   - Bioluminescent Abyssal Space (OLED deep navy & phosphor cyan)
-   - Neo-Tokyo Acid Dusk (Ultraviolet twilight & neon citrus)
-   - Earthy Ceramic & Matcha Moss (Warm stone & tactile minerals)
-   - *1-click HEX copy & exportable CSS variables snippet*
-
-5. **📱 Social Media & Motion Systems**  
-   - Kinetic Bento-Box Product Carousels
-   - Spatial 3D Float Stories with zero-gravity depth-of-field
-   - Neubrutalist High-Contrast News Reels with raw ink borders
+1. **💠 Logos & Brand Identity Systems** (Liquid Glassmorphism, Cyber-Chisel Monograms, Algorithmic Bio-Lattices)
+2. **📐 Editorial Posters & Print** (Deconstructed Swiss Cyberpunk, Risograph Halftones, Solarpunk Bio-Constructivism)
+3. **🔤 Typography & Variable Fonts** (Expanded Neo-Grotesque, Molten Liquid Serifs, Cyber-Runic Monospace)
+4. **🎨 Color Palettes & Lighting Spaces** (Bioluminescent Abyssal, Acid Sunset, Earthy Ceramic & Matcha)
+5. **📱 Social Media & Motion Systems** (Kinetic Bento-Box Carousels, Spatial 3D Float, Neubrutalist Reels)
 
 ---
 
-## 🕹️ Interactive Features
-
-- **Interactive Canvas Radar Scope**: Visual 360° radar sweep with live blips mapped by category and momentum. Hover for instant telemetry; click any blip to focus on its card.
-- **Radar Operations Cockpit**:
-  - **Real-Time Mode**: Standard 6h / 12h / 24h cron schedule.
-  - **Fast Demo Mode**: 15s / 30s / 60s fast-forward cycle for live testing and demonstrations.
-  - **Force Trigger Buttons**: Manually trigger a 6h trend sweep, 12h inspiration drop, or 24h intelligence dossier anytime.
-- **Deep-Dive Trend Modal**: Inspect full AI analysis, design rules, color breakdown, and Midjourney/Flux prompt blueprints.
-- **Color Palette Studio**: Interactive swatch testing with instant clipboard copy and CSS custom property export.
-- **Kinetic Typography Sandbox**: Real-time interactive playground to test headline text, letter-spacing tracking, and optical font weights.
-- **Dossier Exporter**: Export the 24-hour daily trend record as **JSON**, **Markdown**, or direct **Print/PDF**.
-- **Futuristic Synthesizer Audio**: Web Audio API sound effects for radar blips and discovery alerts (toggleable via the 🔊 icon).
-
----
-
-## 🚀 How to Run the Website
-
-Simply open `index.html` in any modern web browser (Chrome, Edge, Firefox, Safari):
-
-1. Double click `index.html` in File Explorer:
-   `c:\Users\Admin\Desktop\ai-design-trend-radar\index.html`
-2. Or open via browser shortcut or local web server:
-   ```bash
-   cd c:\Users\Admin\Desktop\ai-design-trend-radar
-   python -m http.server 8080
-   ```
-   Then navigate to `http://localhost:8080`.
-
----
-
-## 📁 File Structure
+## 📁 Repository Structure
 
 ```
 ai-design-trend-radar/
-├── index.html        # Semantic HTML5 layout, telemetry displays & accessible controls
-├── styles.css        # Cyberpunk & studio glassmorphism theme, responsive grid
-├── app.js            # Radar engine, timer countdowns, canvas renderer & event handlers
-├── data.js           # Trend datasets, SVG vector generators & procedural seed pools
-└── README.md         # Comprehensive project documentation
+├── .github/
+│   ├── workflows/
+│   │   └── ai_trend_pipeline.yml  # Cron schedule (9am & 6pm PKT) & GitHub Pages deployer
+│   └── scripts/
+│       └── ai_pipeline.py         # Gemini AI discovery, verification & publishing engine
+├── index.html                     # Responsive HUD observatory interface & radar scope
+├── styles.css                     # Glassmorphism, 3D tilt physics & animation styles
+├── app.js                         # Radar telemetry engine, Web Audio synth & event system
+├── data.js                        # Published trend catalog consumed by client
+├── data.json                      # Machine-readable JSON endpoint of all verified trends
+└── README.md                      # Documentation & configuration guide
 ```
