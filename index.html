@@ -24,29 +24,23 @@
 
   <!-- TOP MARQUEE TELEMETRY TICKER -->
   <aside class="telemetry-ticker-bar" aria-label="Live Telemetry Feed">
-    <div class="ticker-label">RADAR.NET // LIVE</div>
+    <div class="ticker-label">RADAR.NET // STANDBY</div>
     <div class="ticker-track" id="tickerTrack">
-      <span class="ticker-item"><span class="text-highlight">INGESTION:</span> 482,910 visual vectors monitored</span>
+      <span class="ticker-item"><span class="text-highlight">RADAR STATUS:</span> Observatory listening for AI automation pipeline stream</span>
       <span class="ticker-bullet">◆</span>
-      <span class="ticker-item"><span class="text-surge">HOT WAVE:</span> Liquid Glassmorphism (+38% velocity) in brand identities</span>
+      <span class="ticker-item"><span class="text-highlight">INGESTION ENDPOINT:</span> window.RadarPipeline.ingestTrend() active</span>
       <span class="ticker-bullet">◆</span>
-      <span class="ticker-item"><span class="text-highlight">TYPOGRAPHY:</span> Expanded Grotesque variable axis adoption reaches 93.4%</span>
+      <span class="ticker-item"><span class="text-surge">CADENCE:</span> 6h trend discovery, 12h inspiration drop, 24h dossier locked</span>
       <span class="ticker-bullet">◆</span>
-      <span class="ticker-item"><span class="text-highlight">COLOR MATRIX:</span> Bioluminescent Cyan #00F5D4 dominates dark mode spaces</span>
+      <span class="ticker-item"><span class="text-highlight">DOMAINS:</span> Logos, Posters, Typography, Color Palettes, Social Media</span>
       <span class="ticker-bullet">◆</span>
-      <span class="ticker-item"><span class="text-surge">DECLINE:</span> Flat Corporate Memphis characters down -64%</span>
+      <span class="ticker-item"><span class="text-highlight">RADAR STATUS:</span> Observatory listening for AI automation pipeline stream</span>
       <span class="ticker-bullet">◆</span>
-      <span class="ticker-item"><span class="text-highlight">CADENCE ENGINE:</span> 6h trend sweep, 12h inspiration, 24h dossier locked</span>
+      <span class="ticker-item"><span class="text-highlight">INGESTION ENDPOINT:</span> window.RadarPipeline.ingestTrend() active</span>
       <span class="ticker-bullet">◆</span>
-      <span class="ticker-item"><span class="text-highlight">INGESTION:</span> 482,910 visual vectors monitored</span>
+      <span class="ticker-item"><span class="text-surge">CADENCE:</span> 6h trend discovery, 12h inspiration drop, 24h dossier locked</span>
       <span class="ticker-bullet">◆</span>
-      <span class="ticker-item"><span class="text-surge">HOT WAVE:</span> Liquid Glassmorphism (+38% velocity) in brand identities</span>
-      <span class="ticker-bullet">◆</span>
-      <span class="ticker-item"><span class="text-highlight">TYPOGRAPHY:</span> Expanded Grotesque variable axis adoption reaches 93.4%</span>
-      <span class="ticker-bullet">◆</span>
-      <span class="ticker-item"><span class="text-highlight">COLOR MATRIX:</span> Bioluminescent Cyan #00F5D4 dominates dark mode spaces</span>
-      <span class="ticker-bullet">◆</span>
-      <span class="ticker-item"><span class="text-surge">DECLINE:</span> Flat Corporate Memphis characters down -64%</span>
+      <span class="ticker-item"><span class="text-highlight">DOMAINS:</span> Logos, Posters, Typography, Color Palettes, Social Media</span>
     </div>
   </aside>
 
@@ -80,7 +74,7 @@
       <div class="header-actions">
         <div class="live-status-pill" id="liveStatusBadge">
           <span class="live-dot"></span>
-          <span class="live-label">AUTONOMOUS ONLINE</span>
+          <span class="live-label">LISTENING FOR PIPELINE</span>
         </div>
 
         <button class="icon-btn" id="soundToggleBtn" title="Toggle UI Sound Effects">
@@ -107,30 +101,30 @@
           Autonomous AI Design <span class="gradient-text">Trend Radar</span>
         </h1>
         <p class="hero-description">
-          Continuously surveying visual vectors across logos, editorial posters, variable typography, color spaces, and social systems. Engineered with automated 6h trend sweeps, 12h inspiration drops, and 24h macro intelligence records.
+          Observatory interface surveying visual vectors across logos, editorial posters, variable typography, color spaces, and social systems. Engineered with automated 6h trend sweeps, 12h inspiration drops, and 24h macro intelligence records.
         </p>
 
         <!-- Radar Telemetry Bar -->
         <div class="telemetry-bar">
           <div class="metric-card hud-box">
             <span class="metric-label">Signals Ingested</span>
-            <span class="metric-value" id="metricSignals">482,910</span>
-            <span class="metric-delta positive">↑ 12.4% / 24h</span>
+            <span class="metric-value" id="metricSignals">0</span>
+            <span class="metric-delta positive">Pipeline Ready</span>
           </div>
           <div class="metric-card hud-box">
             <span class="metric-label">Avg Velocity Index</span>
-            <span class="metric-value" id="metricVelocity">+38.6%</span>
-            <span class="metric-delta positive">High Momentum</span>
+            <span class="metric-value" id="metricVelocity">0.0% (Standby)</span>
+            <span class="metric-delta neutral">Listening</span>
           </div>
           <div class="metric-card hud-box">
             <span class="metric-label">Dominant Category</span>
-            <span class="metric-value text-cyan" id="metricDominant">Spatial Logos</span>
-            <span class="metric-delta neutral">98.4% Confidence</span>
+            <span class="metric-value text-cyan" id="metricDominant">Awaiting Ingestion</span>
+            <span class="metric-delta neutral">Open Stream</span>
           </div>
           <div class="metric-card hud-box">
             <span class="metric-label">Radar Telemetry</span>
             <span class="metric-value text-purple" id="metricCadence">Autonomous</span>
-            <span class="metric-delta" id="metricLastSyncTime">Synced 2m ago</span>
+            <span class="metric-delta" id="metricLastSyncTime">Active</span>
           </div>
         </div>
       </div>
@@ -161,7 +155,7 @@
           <span class="waveform-meta text-cyan" id="waveformHz">142.8 Hz</span>
         </div>
 
-        <p class="radar-hint">Hover or click any blip on the radar scope to lock target telemetry.</p>
+        <p class="radar-hint">Hover or click any blip on the radar scope once ingested.</p>
       </div>
     </section>
 
@@ -171,7 +165,7 @@
         <div class="header-pre"><span>⚡</span> REAL-TIME CADENCE ENGINE</div>
         <h2 class="section-title">Automatic Update Schedule & Radar Operations</h2>
         <p class="section-sub">
-          Autonomous time engine tracking real-world intervals. Displays current last update timestamp, live countdowns to subsequent cycles, and manual force-run triggers for inspection.
+          Autonomous time engine tracking real-world intervals. Displays current last update timestamp, live countdowns to subsequent cycles, and manual triggers for your pipeline.
         </p>
       </div>
 
@@ -186,7 +180,7 @@
             <div class="status-item main-timestamp">
               <span class="item-label">LAST UPDATE DATE & TIME</span>
               <div class="item-value-box">
-                <span class="timestamp-display" id="cockpitLastUpdate">Nov 16, 2026 • 15:28:23 UTC</span>
+                <span class="timestamp-display" id="cockpitLastUpdate">Standby</span>
                 <span class="relative-time" id="cockpitRelativeTime">(Just now)</span>
               </div>
             </div>
@@ -207,18 +201,18 @@
             <div class="cadence-badge badge-cyan">EVERY 6 HOURS</div>
             <div class="cadence-icon">🛰️</div>
             <h4 class="cadence-title">Design Trend Discovery</h4>
-            <p class="cadence-desc">Scrapes global aesthetic vectors and discovers new trend signals across all 5 design domains.</p>
+            <p class="cadence-desc">Autonomous 6-hour cycle for discovering new trends across all 5 design domains.</p>
             <div class="countdown-box">
               <span class="countdown-label">NEXT SWEEP IN</span>
-              <span class="countdown-timer text-cyan" id="timer6h">05:41:12</span>
+              <span class="countdown-timer text-cyan" id="timer6h">06:00:00</span>
             </div>
             <div class="cadence-progress">
-              <div class="progress-bar-fill" id="progress6h" style="width: 25%;"></div>
+              <div class="progress-bar-fill" id="progress6h" style="width: 0%;"></div>
             </div>
             <div class="cadence-footer">
-              <span class="footer-history" id="lastTrendTime">Last: 12:00:00 UTC</span>
-              <button class="mini-btn" id="trigger6hBtn" title="Force trigger 6h trend sweep now">
-                ⚡ Force Sweep
+              <span class="footer-history">Pipeline Linked</span>
+              <button class="mini-btn" id="trigger6hBtn" title="Test ingest 6h trend">
+                ⚡ Test Sweep
               </button>
             </div>
           </div>
@@ -228,18 +222,18 @@
             <div class="cadence-badge badge-purple">EVERY 12 HOURS</div>
             <div class="cadence-icon">🎨</div>
             <h4 class="cadence-title">Design Inspiration Drop</h4>
-            <p class="cadence-desc">Curates cutting-edge creative artifacts, generative seed renders, and creator methodologies.</p>
+            <p class="cadence-desc">Autonomous 12-hour cycle for curating design artifacts and creator methodologies.</p>
             <div class="countdown-box">
               <span class="countdown-label">NEXT DROP IN</span>
-              <span class="countdown-timer text-purple" id="timer12h">11:41:12</span>
+              <span class="countdown-timer text-purple" id="timer12h">12:00:00</span>
             </div>
             <div class="cadence-progress">
-              <div class="progress-bar-fill purple-fill" id="progress12h" style="width: 15%;"></div>
+              <div class="progress-bar-fill purple-fill" id="progress12h" style="width: 0%;"></div>
             </div>
             <div class="cadence-footer">
-              <span class="footer-history" id="lastInspTime">Last: 08:00:00 UTC</span>
-              <button class="mini-btn" id="trigger12hBtn" title="Force trigger 12h inspiration drop now">
-                🎨 Force Drop
+              <span class="footer-history">Pipeline Linked</span>
+              <button class="mini-btn" id="trigger12hBtn" title="Test ingest 12h inspiration">
+                🎨 Test Drop
               </button>
             </div>
           </div>
@@ -249,18 +243,18 @@
             <div class="cadence-badge badge-gold">EVERY 24 HOURS</div>
             <div class="cadence-icon">📑</div>
             <h4 class="cadence-title">24h AI Trend Record</h4>
-            <p class="cadence-desc">Synthesizes an in-depth macro intelligence dossier, prompt blueprints, and color forecast.</p>
+            <p class="cadence-desc">Autonomous 24-hour cycle for macro intelligence briefings and prompt blueprints.</p>
             <div class="countdown-box">
               <span class="countdown-label">NEXT RECORD IN</span>
-              <span class="countdown-timer text-gold" id="timer24h">23:41:12</span>
+              <span class="countdown-timer text-gold" id="timer24h">24:00:00</span>
             </div>
             <div class="cadence-progress">
-              <div class="progress-bar-fill gold-fill" id="progress24h" style="width: 8%;"></div>
+              <div class="progress-bar-fill gold-fill" id="progress24h" style="width: 0%;"></div>
             </div>
             <div class="cadence-footer">
-              <span class="footer-history" id="lastRecordTime">Last: 00:00:00 UTC</span>
-              <button class="mini-btn" id="trigger24hBtn" title="Force generate 24h AI trend record now">
-                📊 Force Record
+              <span class="footer-history">Pipeline Linked</span>
+              <button class="mini-btn" id="trigger24hBtn" title="Test ingest 24h AI record">
+                📊 Test Record
               </button>
             </div>
           </div>
@@ -270,14 +264,11 @@
         <div class="operations-bar">
           <div class="ops-info">
             <span class="pulse-dot-green"></span>
-            <span id="opsStatusMessage">Autonomous Radar Loop Active • Background timer running smoothly</span>
+            <span id="opsStatusMessage">Observatory Online • Ready for AI automation pipeline ingestion stream</span>
           </div>
           <div class="ops-buttons">
-            <button class="secondary-btn" id="simulateAllBtn">
-              <span>🚀 Run Full Cycle (All 3)</span>
-            </button>
             <button class="ghost-btn" id="resetDataBtn">
-              <span>🔄 Reset Factory State</span>
+              <span>🔄 Clear All Data</span>
             </button>
           </div>
         </div>
@@ -291,11 +282,11 @@
           <div class="header-pre"><span>🛰️</span> UPDATED EVERY 6 HOURS</div>
           <h2 class="section-title">Live Design Trends Explorer</h2>
           <p class="section-sub">
-            Real-time discovered vectors across Logos, Posters, Typography, Color Palettes, and Social Media. Hover over cards for 3D tilt perspective.
+            Real-time discovered vectors across Logos, Posters, Typography, Color Palettes, and Social Media.
           </p>
         </div>
         <div class="trend-counter-badge" id="trendCountBadge">
-          Tracking 15 Signals
+          Tracking 0 Signals
         </div>
       </div>
 
@@ -343,9 +334,9 @@
         </div>
       </div>
 
-      <!-- Live Trends Cards Grid with 3D Tilt Glare -->
+      <!-- Live Trends Cards Grid (Starts completely blank) -->
       <div class="trends-grid" id="trendsGrid">
-        <!-- Dynamically rendered by JavaScript -->
+        <!-- Rendered by JavaScript -->
       </div>
     </section>
 
@@ -360,7 +351,7 @@
       </div>
 
       <div class="inspirations-grid" id="inspirationsGrid">
-        <!-- Dynamically rendered by JavaScript -->
+        <!-- Rendered by JavaScript -->
       </div>
     </section>
 
@@ -374,20 +365,9 @@
             Comprehensive daily intelligence dossier synthesized from global telemetry. Includes macro shifts, dying patterns, and prompt formulas.
           </p>
         </div>
-        <div class="dossier-actions">
-          <button class="secondary-btn" id="exportDossierJsonBtn" title="Export as JSON">
-            <span>📥 Export JSON</span>
-          </button>
-          <button class="secondary-btn" id="exportDossierMdBtn" title="Export as Markdown">
-            <span>📄 Export MD</span>
-          </button>
-          <button class="primary-btn" id="printDossierBtn" title="Print / PDF">
-            <span>🖨️ Print Dossier</span>
-          </button>
-        </div>
       </div>
 
-      <!-- Dossier Container -->
+      <!-- Dossier Container (Starts completely blank) -->
       <div class="dossier-container hud-box" id="dossierContainer">
         <!-- Rendered by JavaScript -->
       </div>
@@ -464,7 +444,7 @@
         <span class="brand-title">RADAR<span class="accent-text">.AI</span></span>
         <p>Autonomous AI Design Trend Radar • Continuous multi-agent scanning of global graphic vectors.</p>
         <div class="footer-timestamp">
-          <span>Engine Telemetry: Live UTC Heartbeat</span> • <span id="footerClock">2026-11-16 15:40:00 UTC</span>
+          <span>Engine Telemetry: Live UTC Heartbeat</span> • <span id="footerClock">Standby</span>
         </div>
       </div>
       <div class="footer-meta">
@@ -486,16 +466,12 @@
   <div class="modal-backdrop" id="trendModal" role="dialog" aria-modal="true" aria-hidden="true">
     <div class="modal-container hud-box">
       <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close dialog">✕</button>
-      <div class="modal-body" id="modalBody">
-        <!-- Rendered by JavaScript dynamically -->
-      </div>
+      <div class="modal-body" id="modalBody"></div>
     </div>
   </div>
 
-  <!-- TOAST NOTIFICATION CONTAINER -->
   <div class="toast-container" id="toastContainer"></div>
 
-  <!-- SCRIPTS -->
   <script src="data.js"></script>
   <script src="app.js"></script>
 </body>
