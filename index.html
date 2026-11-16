@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Design Trend Radar | Next-Gen Visual Intelligence</title>
+  <meta name="description" content="Autonomous AI Design Trend Radar discovering graphic design trends across logos, posters, typography, color palettes, and social media with 6h, 12h, and 24h auto-updates.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="dark-mode">
+
+  <!-- Interactive Ambient Cursor Light Aura & Background Constellation Canvas -->
+  <div id="cursorAura"></div>
+  <canvas id="bgConstellationCanvas"></canvas>
+  <div class="film-grain-overlay"></div>
+
+  <!-- Ambient Glow Backdrops -->
+  <div class="ambient-glow glow-cyan"></div>
+  <div class="ambient-glow glow-purple"></div>
+  <div class="matrix-grid-bg"></div>
+
+  <!-- TOP MARQUEE TELEMETRY TICKER -->
+  <aside class="telemetry-ticker-bar" aria-label="Live Telemetry Feed">
+    <div class="ticker-label">RADAR.NET // LIVE</div>
+    <div class="ticker-track" id="tickerTrack">
+      <span class="ticker-item"><span class="text-highlight">INGESTION:</span> 482,910 visual vectors monitored</span>
+      <span class="ticker-bullet">◆</span>
+      <span class="ticker-item"><span class="text-surge">HOT WAVE:</span> Liquid Glassmorphism (+38% velocity) in brand identities</span>
+      <span class="ticker-bullet">◆</span>
+      <span class="ticker-item"><span class="text-highlight">TYPOGRAPHY:</span> Expanded Grotesque variable axis adoption reaches 93.4%</span>
+      <span class="ticker-bullet">◆</span>
+      <span class="ticker-item"><span class="text-highlight">COLOR MATRIX:</span> Bioluminescent Cyan #00F5D4 dominates dark mode spaces</span>
+      <span class="ticker-bullet">◆</span>
+      <span class="ticker-item"><span class="text-surge">DECLINE:</span> Flat Corporate Memphis characters down -64%</span>
+      <span class="ticker-bullet">◆</span>
+      <span class="ticker-item"><span class="text-highlight">CADENCE ENGINE:</span> 6h trend sweep, 12h inspiration, 24h dossier locked</span>
+      <span class="ticker-bullet">◆</span>
+      <span class="ticker-item"><span class="text-highlight">INGESTION:</span> 482,910 visual vectors monitored</span>
+      <span class="ticker-bullet">◆</span>
+      <span class="ticker-item"><span class="text-surge">HOT WAVE:</span> Liquid Glassmorphism (+38% velocity) in brand identities</span>
+      <span class="ticker-bullet">◆</span>
+      <span class="ticker-item"><span class="text-highlight">TYPOGRAPHY:</span> Expanded Grotesque variable axis adoption reaches 93.4%</span>
+      <span class="ticker-bullet">◆</span>
+      <span class="ticker-item"><span class="text-highlight">COLOR MATRIX:</span> Bioluminescent Cyan #00F5D4 dominates dark mode spaces</span>
+      <span class="ticker-bullet">◆</span>
+      <span class="ticker-item"><span class="text-surge">DECLINE:</span> Flat Corporate Memphis characters down -64%</span>
+    </div>
+  </aside>
+
+  <!-- NAVIGATION HEADER -->
+  <header class="site-header">
+    <div class="header-container">
+      <div class="brand-group" id="brandNav">
+        <div class="radar-logo-pulse">
+          <div class="pulse-ring"></div>
+          <div class="pulse-ring delay-1"></div>
+          <div class="pulse-core"></div>
+        </div>
+        <div class="brand-text">
+          <span class="brand-title">RADAR<span class="accent-text">.AI</span></span>
+          <span class="brand-badge">DESIGN OBSERVATORY 2026</span>
+        </div>
+      </div>
+
+      <!-- Quick Nav Links -->
+      <nav class="nav-links">
+        <a href="#radar-hero" class="nav-link active">Radar Scope</a>
+        <a href="#schedule-cockpit" class="nav-link">Schedule Engine</a>
+        <a href="#trends-section" class="nav-link">Trends <span class="badge-pill">6h</span></a>
+        <a href="#inspirations-section" class="nav-link">Inspirations <span class="badge-pill">12h</span></a>
+        <a href="#dossier-section" class="nav-link">24h Dossier <span class="badge-pill">24h</span></a>
+        <a href="#palette-studio" class="nav-link">Palette Studio</a>
+        <a href="#type-lab" class="nav-link">Type Lab</a>
+      </nav>
+
+      <!-- Header Action Controls -->
+      <div class="header-actions">
+        <div class="live-status-pill" id="liveStatusBadge">
+          <span class="live-dot"></span>
+          <span class="live-label">AUTONOMOUS ONLINE</span>
+        </div>
+
+        <button class="icon-btn" id="soundToggleBtn" title="Toggle UI Sound Effects">
+          <span class="btn-icon">🔊</span>
+        </button>
+
+        <button class="primary-btn" id="openCockpitBtn">
+          <span class="btn-icon">⚡</span>
+          <span>Operations Hub</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION WITH LIVE INTERACTIVE RADAR CANVAS -->
+    <section class="radar-hero" id="radar-hero">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="pulse-mini"></span>
+          GLOBAL DESIGN TELEMETRY // AI SCANNER
+        </div>
+        <h1 class="hero-title">
+          Autonomous AI Design <span class="gradient-text">Trend Radar</span>
+        </h1>
+        <p class="hero-description">
+          Continuously surveying visual vectors across logos, editorial posters, variable typography, color spaces, and social systems. Engineered with automated 6h trend sweeps, 12h inspiration drops, and 24h macro intelligence records.
+        </p>
+
+        <!-- Radar Telemetry Bar -->
+        <div class="telemetry-bar">
+          <div class="metric-card hud-box">
+            <span class="metric-label">Signals Ingested</span>
+            <span class="metric-value" id="metricSignals">482,910</span>
+            <span class="metric-delta positive">↑ 12.4% / 24h</span>
+          </div>
+          <div class="metric-card hud-box">
+            <span class="metric-label">Avg Velocity Index</span>
+            <span class="metric-value" id="metricVelocity">+38.6%</span>
+            <span class="metric-delta positive">High Momentum</span>
+          </div>
+          <div class="metric-card hud-box">
+            <span class="metric-label">Dominant Category</span>
+            <span class="metric-value text-cyan" id="metricDominant">Spatial Logos</span>
+            <span class="metric-delta neutral">98.4% Confidence</span>
+          </div>
+          <div class="metric-card hud-box">
+            <span class="metric-label">Radar Telemetry</span>
+            <span class="metric-value text-purple" id="metricCadence">Autonomous</span>
+            <span class="metric-delta" id="metricLastSyncTime">Synced 2m ago</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Live Interactive Radar Canvas Display & Signal Audio Waveform -->
+      <div class="radar-scope-wrapper">
+        <div class="radar-frame hud-box">
+          <canvas id="radarCanvas" width="460" height="460"></canvas>
+          <div class="radar-overlay-stats">
+            <div class="radar-compass-n">N 000°</div>
+            <div class="radar-compass-e">E 090°</div>
+            <div class="radar-compass-s">S 180°</div>
+            <div class="radar-compass-w">W 270°</div>
+            <div class="radar-legend">
+              <span class="legend-item"><span class="legend-dot dot-logo"></span> Logos</span>
+              <span class="legend-item"><span class="legend-dot dot-poster"></span> Posters</span>
+              <span class="legend-item"><span class="legend-dot dot-typo"></span> Typography</span>
+              <span class="legend-item"><span class="legend-dot dot-palette"></span> Colors</span>
+              <span class="legend-item"><span class="legend-dot dot-social"></span> Social</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Live Audio Waveform Telemetry Visualizer -->
+        <div class="waveform-container">
+          <span class="waveform-meta">SIGNAL FFT:</span>
+          <canvas id="waveformCanvas" width="320" height="28"></canvas>
+          <span class="waveform-meta text-cyan" id="waveformHz">142.8 Hz</span>
+        </div>
+
+        <p class="radar-hint">Hover or click any blip on the radar scope to lock target telemetry.</p>
+      </div>
+    </section>
+
+    <!-- AUTOMATED UPDATE SCHEDULE & RADAR OPERATIONS COCKPIT -->
+    <section class="schedule-cockpit-section hud-box" id="schedule-cockpit">
+      <div class="section-header">
+        <div class="header-pre"><span>⚡</span> REAL-TIME CADENCE ENGINE</div>
+        <h2 class="section-title">Automatic Update Schedule & Radar Operations</h2>
+        <p class="section-sub">
+          Autonomous time engine tracking real-world intervals. Displays current last update timestamp, live countdowns to subsequent cycles, and manual force-run triggers for inspection.
+        </p>
+      </div>
+
+      <div class="cockpit-container">
+        <!-- Prominent Last Updated Display -->
+        <div class="cockpit-status-card hud-box">
+          <div class="status-header">
+            <span class="status-indicator"></span>
+            <h3>TELEMETRY TIME SYNCHRONIZATION</h3>
+          </div>
+          <div class="status-grid">
+            <div class="status-item main-timestamp">
+              <span class="item-label">LAST UPDATE DATE & TIME</span>
+              <div class="item-value-box">
+                <span class="timestamp-display" id="cockpitLastUpdate">Nov 16, 2026 • 15:28:23 UTC</span>
+                <span class="relative-time" id="cockpitRelativeTime">(Just now)</span>
+              </div>
+            </div>
+            <div class="status-item">
+              <span class="item-label">ENGINE MODE</span>
+              <div class="mode-toggle-group">
+                <button class="mode-pill active" id="modeRealtimeBtn" title="Real-World 6h / 12h / 24h Intervals">Real-Time (6h/12h/24h)</button>
+                <button class="mode-pill" id="modeFastDemoBtn" title="Fast Demo Mode with 15s / 30s / 60s Cycles">Fast Demo (15s/30s/60s)</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3 Scheduled Cadences Cards -->
+        <div class="cadence-cards-grid">
+          <!-- 6-HOUR CADENCE CARD -->
+          <div class="cadence-card hud-box" id="cadence6hCard">
+            <div class="cadence-badge badge-cyan">EVERY 6 HOURS</div>
+            <div class="cadence-icon">🛰️</div>
+            <h4 class="cadence-title">Design Trend Discovery</h4>
+            <p class="cadence-desc">Scrapes global aesthetic vectors and discovers new trend signals across all 5 design domains.</p>
+            <div class="countdown-box">
+              <span class="countdown-label">NEXT SWEEP IN</span>
+              <span class="countdown-timer text-cyan" id="timer6h">05:41:12</span>
+            </div>
+            <div class="cadence-progress">
+              <div class="progress-bar-fill" id="progress6h" style="width: 25%;"></div>
+            </div>
+            <div class="cadence-footer">
+              <span class="footer-history" id="lastTrendTime">Last: 12:00:00 UTC</span>
+              <button class="mini-btn" id="trigger6hBtn" title="Force trigger 6h trend sweep now">
+                ⚡ Force Sweep
+              </button>
+            </div>
+          </div>
+
+          <!-- 12-HOUR CADENCE CARD -->
+          <div class="cadence-card hud-box" id="cadence12hCard">
+            <div class="cadence-badge badge-purple">EVERY 12 HOURS</div>
+            <div class="cadence-icon">🎨</div>
+            <h4 class="cadence-title">Design Inspiration Drop</h4>
+            <p class="cadence-desc">Curates cutting-edge creative artifacts, generative seed renders, and creator methodologies.</p>
+            <div class="countdown-box">
+              <span class="countdown-label">NEXT DROP IN</span>
+              <span class="countdown-timer text-purple" id="timer12h">11:41:12</span>
+            </div>
+            <div class="cadence-progress">
+              <div class="progress-bar-fill purple-fill" id="progress12h" style="width: 15%;"></div>
+            </div>
+            <div class="cadence-footer">
+              <span class="footer-history" id="lastInspTime">Last: 08:00:00 UTC</span>
+              <button class="mini-btn" id="trigger12hBtn" title="Force trigger 12h inspiration drop now">
+                🎨 Force Drop
+              </button>
+            </div>
+          </div>
+
+          <!-- 24-HOUR CADENCE CARD -->
+          <div class="cadence-card hud-box" id="cadence24hCard">
+            <div class="cadence-badge badge-gold">EVERY 24 HOURS</div>
+            <div class="cadence-icon">📑</div>
+            <h4 class="cadence-title">24h AI Trend Record</h4>
+            <p class="cadence-desc">Synthesizes an in-depth macro intelligence dossier, prompt blueprints, and color forecast.</p>
+            <div class="countdown-box">
+              <span class="countdown-label">NEXT RECORD IN</span>
+              <span class="countdown-timer text-gold" id="timer24h">23:41:12</span>
+            </div>
+            <div class="cadence-progress">
+              <div class="progress-bar-fill gold-fill" id="progress24h" style="width: 8%;"></div>
+            </div>
+            <div class="cadence-footer">
+              <span class="footer-history" id="lastRecordTime">Last: 00:00:00 UTC</span>
+              <button class="mini-btn" id="trigger24hBtn" title="Force generate 24h AI trend record now">
+                📊 Force Record
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Operational Action Bar -->
+        <div class="operations-bar">
+          <div class="ops-info">
+            <span class="pulse-dot-green"></span>
+            <span id="opsStatusMessage">Autonomous Radar Loop Active • Background timer running smoothly</span>
+          </div>
+          <div class="ops-buttons">
+            <button class="secondary-btn" id="simulateAllBtn">
+              <span>🚀 Run Full Cycle (All 3)</span>
+            </button>
+            <button class="ghost-btn" id="resetDataBtn">
+              <span>🔄 Reset Factory State</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TREND EXPLORER & FILTER TOOLBAR -->
+    <section class="trends-section" id="trends-section">
+      <div class="section-header-split">
+        <div>
+          <div class="header-pre"><span>🛰️</span> UPDATED EVERY 6 HOURS</div>
+          <h2 class="section-title">Live Design Trends Explorer</h2>
+          <p class="section-sub">
+            Real-time discovered vectors across Logos, Posters, Typography, Color Palettes, and Social Media. Hover over cards for 3D tilt perspective.
+          </p>
+        </div>
+        <div class="trend-counter-badge" id="trendCountBadge">
+          Tracking 15 Signals
+        </div>
+      </div>
+
+      <!-- Controls & Filter Bar -->
+      <div class="filter-toolbar">
+        <!-- Category Filter Pills -->
+        <div class="category-pills" id="categoryPills">
+          <button class="pill active" data-category="all">
+            <span class="pill-icon">🌐</span> All Trends
+          </button>
+          <button class="pill" data-category="logos">
+            <span class="pill-icon">💠</span> Logos & Identity
+          </button>
+          <button class="pill" data-category="posters">
+            <span class="pill-icon">📐</span> Editorial Posters
+          </button>
+          <button class="pill" data-category="typography">
+            <span class="pill-icon">🔤</span> Typography
+          </button>
+          <button class="pill" data-category="palettes">
+            <span class="pill-icon">🎨</span> Color Palettes
+          </button>
+          <button class="pill" data-category="social">
+            <span class="pill-icon">📱</span> Social Media
+          </button>
+        </div>
+
+        <!-- Search & Sort Row -->
+        <div class="search-sort-group">
+          <div class="search-box">
+            <span class="search-icon">🔍</span>
+            <input type="text" id="trendSearchInput" placeholder="Search trends, aesthetics, prompts, or keywords..." aria-label="Search design trends">
+            <button class="clear-search-btn" id="clearSearchBtn" style="display: none;">✕</button>
+          </div>
+
+          <div class="sort-dropdown-wrap">
+            <label for="trendSortSelect" class="sort-label">Sort by:</label>
+            <select id="trendSortSelect" class="custom-select">
+              <option value="momentum-desc">🔥 Highest Momentum</option>
+              <option value="newest">✨ Discovered (Newest)</option>
+              <option value="confidence">🎯 AI Confidence</option>
+              <option value="title-asc">🔤 Name (A-Z)</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <!-- Live Trends Cards Grid with 3D Tilt Glare -->
+      <div class="trends-grid" id="trendsGrid">
+        <!-- Dynamically rendered by JavaScript -->
+      </div>
+    </section>
+
+    <!-- INSPIRATIONS SHOWCASE (12-Hour Cadence) -->
+    <section class="inspirations-section" id="inspirations-section">
+      <div class="section-header">
+        <div class="header-pre"><span>🎨</span> CURATED EVERY 12 HOURS</div>
+        <h2 class="section-title">Design Inspirations Showcase</h2>
+        <p class="section-sub">
+          Breakthrough creative artifacts, multi-agent generative experiments, and creator workflows scraped every 12 hours.
+        </p>
+      </div>
+
+      <div class="inspirations-grid" id="inspirationsGrid">
+        <!-- Dynamically rendered by JavaScript -->
+      </div>
+    </section>
+
+    <!-- 24-HOUR AI DESIGN TREND RECORD (Daily Intelligence Dossier) -->
+    <section class="dossier-section" id="dossier-section">
+      <div class="section-header-split">
+        <div>
+          <div class="header-pre"><span>📑</span> SYNTHESIZED EVERY 24 HOURS</div>
+          <h2 class="section-title">24-Hour AI Design Trend Record</h2>
+          <p class="section-sub">
+            Comprehensive daily intelligence dossier synthesized from global telemetry. Includes macro shifts, dying patterns, and prompt formulas.
+          </p>
+        </div>
+        <div class="dossier-actions">
+          <button class="secondary-btn" id="exportDossierJsonBtn" title="Export as JSON">
+            <span>📥 Export JSON</span>
+          </button>
+          <button class="secondary-btn" id="exportDossierMdBtn" title="Export as Markdown">
+            <span>📄 Export MD</span>
+          </button>
+          <button class="primary-btn" id="printDossierBtn" title="Print / PDF">
+            <span>🖨️ Print Dossier</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Dossier Container -->
+      <div class="dossier-container hud-box" id="dossierContainer">
+        <!-- Rendered by JavaScript -->
+      </div>
+    </section>
+
+    <!-- INTERACTIVE COLOR PALETTE STUDIO -->
+    <section class="palette-studio-section" id="palette-studio">
+      <div class="section-header">
+        <div class="header-pre"><span>🎨</span> ACCESSIBILITY & COLOR HARMONY</div>
+        <h2 class="section-title">Interactive AI Color Palette Studio</h2>
+        <p class="section-sub">
+          Test trending color spaces, click any swatch to copy HEX values, check contrast compliance, and copy CSS color variables.
+        </p>
+      </div>
+
+      <div class="palette-studio-container" id="paletteStudioContainer">
+        <!-- Rendered by JavaScript -->
+      </div>
+    </section>
+
+    <!-- INTERACTIVE KINETIC TYPOGRAPHY LAB -->
+    <section class="type-lab-section" id="type-lab">
+      <div class="section-header">
+        <div class="header-pre"><span>🔤</span> VARIABLE TYPE ENGINE</div>
+        <h2 class="section-title">Kinetic Typography Sandbox</h2>
+        <p class="section-sub">
+          Test live responsive variable font aesthetics dominating 2026. Adjust tracking, optical width, and slant parameters in real-time.
+        </p>
+      </div>
+
+      <div class="type-lab-card hud-box">
+        <div class="type-lab-controls">
+          <div class="control-item">
+            <label for="typeInputText">Test Headline:</label>
+            <input type="text" id="typeInputText" value="KINETIC INTELLIGENCE // 2026" class="type-input">
+          </div>
+          <div class="control-item">
+            <label for="typeTrackingSlider">Letter Spacing: <span id="trackingVal">12px</span></label>
+            <input type="range" id="typeTrackingSlider" min="-2" max="28" value="12" step="1">
+          </div>
+          <div class="control-item">
+            <label for="typeWeightSlider">Optical Weight: <span id="weightVal">700</span></label>
+            <input type="range" id="typeWeightSlider" min="200" max="900" value="700" step="50">
+          </div>
+          <div class="control-item">
+            <label for="typeStyleSelect">Aesthetic Preset:</label>
+            <select id="typeStyleSelect" class="custom-select">
+              <option value="grotesque">Expanded Neo-Grotesque</option>
+              <option value="chisel">Cyber-Chisel Display</option>
+              <option value="serif">Fluid Organic Serif</option>
+              <option value="mono">Runic Monospace Code</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="type-preview-stage" id="typePreviewStage">
+          <div class="type-preview-text" id="typePreviewText">
+            KINETIC INTELLIGENCE // 2026
+          </div>
+          <div class="type-meta-tags">
+            <span class="type-tag">CSS: font-variation-settings: 'wght' 700</span>
+            <span class="type-tag">Tracking: +12px</span>
+            <span class="type-tag">Rendering: Hardware Accelerated WebGL/CSS</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <span class="brand-title">RADAR<span class="accent-text">.AI</span></span>
+        <p>Autonomous AI Design Trend Radar • Continuous multi-agent scanning of global graphic vectors.</p>
+        <div class="footer-timestamp">
+          <span>Engine Telemetry: Live UTC Heartbeat</span> • <span id="footerClock">2026-11-16 15:40:00 UTC</span>
+        </div>
+      </div>
+      <div class="footer-meta">
+        <div class="footer-links">
+          <a href="#radar-hero">Radar Scope</a>
+          <a href="#schedule-cockpit">Schedule Engine</a>
+          <a href="#trends-section">Design Trends</a>
+          <a href="#inspirations-section">Inspirations</a>
+          <a href="#dossier-section">24h Dossier</a>
+        </div>
+        <div class="footer-copy">
+          Built with HTML5, Modern CSS3, & Vanilla JavaScript. Automatic 6h, 12h, & 24h cron engines.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- DETAIL MODAL FOR TRENDS -->
+  <div class="modal-backdrop" id="trendModal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal-container hud-box">
+      <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close dialog">✕</button>
+      <div class="modal-body" id="modalBody">
+        <!-- Rendered by JavaScript dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <!-- TOAST NOTIFICATION CONTAINER -->
+  <div class="toast-container" id="toastContainer"></div>
+
+  <!-- SCRIPTS -->
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
